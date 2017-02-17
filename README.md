@@ -5,7 +5,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 
 
 ## Contributors
-Nick Beckwith <b>Lead<b>
+* [Nick Beckwith](nbeckwith2@wisc.edu) **Lead** 
 (more to come)
 
 ## Important Links
