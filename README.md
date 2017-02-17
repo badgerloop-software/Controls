@@ -4,7 +4,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 <# Code Example>
 
 ## Contributors
-Nick Beckwith <b>Lead<\b>
+Nick Beckwith <b>Lead
 (more to come)
 
 ## Important Links
