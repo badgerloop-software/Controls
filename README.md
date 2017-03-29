@@ -26,10 +26,10 @@ Does it compile?
 In order to ditch the online ide, we will be using platformIO which has mbed support. PlatformIO allows you to work on the IDE and OS of your choice with well documented configurations. There is an official platformIO ide that is based off of the Atom editor which works nicely and has a built-in serial monitor. If you're more comfortable with other editors i.e. eclipse or visual studio, you can do that too, but it won't be covered.
 * Install Atom and the platformIO package [here](http://platformio.org/platformio-ide)
 * After platformIO is installed, go to Atom and follow [this](http://docs.platformio.org/en/latest/ide/atom.html#quick-start) to install Clang for code completion.
-* Click 'platformIO>Initialize' or Update PlatformIO Project, select the Nucleo-F429ZI board this repo directory. Click process. This step installs the STM platform and any toolchains needed.
+* Click `platformIO>Initialize` or Update PlatformIO Project, select the Nucleo-F429ZI board this repo directory. Click process. This step installs the STM platform and any toolchains needed.
 * In the future, this will be all you'll need to compile and run on our environment. As of right now, (29 Mar 17), the toolchain platformIO uses for our microcontroller is out of date. So we have to install the [GNU ARM Embedded Toolchain](https://launchpad.net/gcc-arm-embedded/+download).
-* Backup 'toolchain-gccarmnoneeabi' and create a new 'toolchain-gccarmnoneeabi' folder.
-* Extract/install your toolchain in the new 'toolchain-gccarmnoneeabi' folder.
-* Copy 'package.json' file from 'z_toolchain-gccarmnoneeabi' to the new folder'toolchain-gccarmnoneeabi'
+* Backup `toolchain-gccarmnoneeabi` and create a new `toolchain-gccarmnoneeabi` folder.
+* Extract/install your toolchain in the new `toolchain-gccarmnoneeabi` folder.
+* Copy `package.json` file from `z_toolchain-gccarmnoneeabi` to the new folder `toolchain-gccarmnoneeabi`
 * Start programming!
 
