@@ -18,7 +18,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 -->
 
 ## So you want to make a commit
-Does it compile?
+Does it compile?  
   yes -> commit away  
   no  -> Don't you dare  
 
