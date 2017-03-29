@@ -19,8 +19,8 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 
 ## So you want to make a commit
 Does it compile?
-  yes -> commit away
-  no  -> Don't you dare
+  yes -> commit away  
+  no  -> Don't you dare  
 
 ## PlatformIO
 In order to ditch the online ide, we will be using platformIO which has mbed support. PlatformIO allows you to work on the IDE and OS of your choice with well documented configurations. There is an official platformIO ide that is based off of the Atom editor which works nicely and has a built-in serial monitor. If you're more comfortable with other editors i.e. eclipse or visual studio, you can do that too, but it won't be covered.
