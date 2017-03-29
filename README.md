@@ -19,7 +19,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 
 ## So you want to make a commit
 Does it compile?  
-* yes -> commit away  
+* yes -> Commit away!  
 * no  -> Don't you dare  
 
 ## PlatformIO
