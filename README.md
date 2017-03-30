@@ -38,5 +38,5 @@ In order to ditch the online ide, we will be using platformIO which has mbed sup
 As we encounter problems attempting to install, compile, and upload our code, we will try to post solutions here.
 * When uploading code, if you get an error saying that you must specify the upload port, a few solutions might work.
   * First try to install the Nucleo-F429ZI drivers you can find online. 
-  * If this doesn't work, open the `platformio.ini` file and you can specify the upload port here. You can add the line of code 'upload_port = YOUR_PATH' where YOUR_PATH is the path you can find the microcontroller plugged in via usb. For windows users, look in the file explorer and see what letter drive this is. It could be the 'D:/' drive for example, so you would type 'upload_file = D:/". After adding this line of code it should upload correctly.
+  * If this doesn't work, open the `platformio.ini` file and you can specify the upload port here. You can add the line of code `upload_port = YOUR_PATH` where YOUR_PATH is the path you can find the microcontroller plugged in via usb. For windows users, look in the file explorer and see what letter drive this is. It could be the 'D:/' drive for example, so you would type `upload_port = D:/`. After adding this line of code it should upload correctly.
 
