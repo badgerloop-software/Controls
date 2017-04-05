@@ -1,5 +1,4 @@
-#include "mbed.h"
-#include "MPU9250.hpp"
+#include "MPU9250AccelTest.hpp"
 
 //Serial Communication with PC so we can send it data
 Serial pc(SERIAL_TX, SERIAL_RX);
