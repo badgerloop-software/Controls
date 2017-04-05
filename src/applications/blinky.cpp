@@ -1,7 +1,4 @@
 #include "blinky.hpp"
-#include "mbed.h"
-
-DigitalOut led2(LED2);
 
 void blinky(float seconds) {
   while(1) {

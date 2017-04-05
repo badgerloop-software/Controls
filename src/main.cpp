@@ -1,7 +1,8 @@
 #include "mbed.h"
-#include <blinky.hpp>
-#include <RetroreflectiveTest.hpp>
+#include "applications/blinky.hpp"
+#include "peripherals/LED.hpp"
+#include "applications/UART.hpp"
 
 int main(void) {
-  blinky(1);
+
 }

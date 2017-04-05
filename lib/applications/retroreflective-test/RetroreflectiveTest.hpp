@@ -1,4 +1,0 @@
-#ifndef RETROREFLECTIVE_H
-#define RETROREFLECTIVE_H
-
-#endif
