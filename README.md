@@ -6,7 +6,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 
 ## Contributors
 * [Nick Beckwith](mailto:nbeckwith2@wisc.edu) **Lead** 
-* [Doug Dresser](mailto:dwdresser@wisc.edu) **Not-Lead**
+* [Doug Dresser](mailto:dwdresser@wisc.edu) **I2C**
 (add your name here while you're at it)
 
 ## Important Links
@@ -34,7 +34,7 @@ In order to ditch the online ide, we will be using platformIO which has mbed sup
 * Copy the `package.json` file from  your backup`toolchain-g ccarmnoneeabi_backup` to the new folder `toolchain-gccarmnoneeabi`
 * You should now be ready to program! 
 
-## Troublehshooting 
+## Troubleshooting 
 As we encounter problems attempting to install, compile, and upload our code, we will try to post solutions here.
 * When uploading code, if you get an error saying that you must specify the upload port, a few solutions might work.
   * First try to install the Nucleo-F429ZI drivers you can find online. 
