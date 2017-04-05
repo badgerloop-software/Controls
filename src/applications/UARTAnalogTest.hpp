@@ -4,9 +4,6 @@
 #include "../peripherals/LED.hpp"
 #include "../peripherals/UART.hpp"
 
-
-void sendAnalog(AnalogIn pin, Serial uart);
-
 void prompt(AnalogIn pin, Serial uart);
 
 #endif
