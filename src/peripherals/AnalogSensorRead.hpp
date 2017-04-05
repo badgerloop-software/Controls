@@ -39,7 +39,6 @@ double Thermistor(int RawADC);
 *   Return:
 *     double pressure = The pressure reading in PSI
 */
-
 int pressureLineRead(int sensorNumber);
 
 
