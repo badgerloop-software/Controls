@@ -1,13 +1,10 @@
 #include "MPU9250AccelTest.hpp"
 
-//Serial Communication with PC so we can send it data
-Serial pc(SERIAL_TX, SERIAL_RX);
-
 //Object of MPU9250 class
 //I2C1 is located at port PB_9 and PB_8 on the Nucleo microcontroller
 MPU9250 mpu9250(PB_9,PB_8);
 
-int main()
+void printAccel()
 {
     //Set the range of the acceleration to 2G's. We will never exceed this in
     //badgerloop so this is a good range. Can also do 4, 8, or 16 G's but with

@@ -20,7 +20,7 @@ void retroInterrupt(){
     currentTimeStamp = timer.read_ms();
 }
 
-int main() {
+int retroTest() {
     double distanceTravelled = 0;
     double speed = 0;
 
