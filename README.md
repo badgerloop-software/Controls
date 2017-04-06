@@ -8,6 +8,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 * [Nick Beckwith](mailto:nbeckwith2@wisc.edu) **Lead**
 * [Doug Dresser](mailto:dwdresser@wisc.edu) **I2C**
 * [Sam Schreiner](mailto:sschreiner@wisc.edu)
+* [Owen Zinkgraf](mailto:ozinkgraf@wisc.edu)
 (add your name here while you're at it)
 
 ## Important Links
