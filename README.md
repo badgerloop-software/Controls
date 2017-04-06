@@ -5,8 +5,9 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 
 
 ## Contributors
-* [Nick Beckwith](mailto:nbeckwith2@wisc.edu) **Lead** 
+* [Nick Beckwith](mailto:nbeckwith2@wisc.edu) **Lead**
 * [Doug Dresser](mailto:dwdresser@wisc.edu) **I2C**
+* [Sam Schreiner](mailto:sschreiner@wisc.edu)
 (add your name here while you're at it)
 
 ## Important Links
@@ -32,11 +33,10 @@ In order to ditch the online ide, we will be using platformIO which has mbed sup
 * Now, find your .platformio folder(for windows it should be under your home directory), and find a folder called 'toolchain-gccarmnoneeabi' in the 'packages' folder. Backup `toolchain-gccarmnoneeabi` by renaming it as something else you will remember like `toolchain-gccarmoneeabi_backup`.  Now create a new folder with the original name `toolchain-gccarmoneeabi`.
 * Now you can run the installer from 2 steps ago and extract/install your toolchain in the new `toolchain-gccarmnoneeabi` folder. If the extracted toolchain is inside another file, just remove it so that you can see everything once you are inside `toolchain-gccarmoneeabi`. You should not have to click on another single folder to view everthing.
 * Copy the `package.json` file from  your backup`toolchain-g ccarmnoneeabi_backup` to the new folder `toolchain-gccarmnoneeabi`
-* You should now be ready to program! 
+* You should now be ready to program!
 
-## Troubleshooting 
+## Troubleshooting
 As we encounter problems attempting to install, compile, and upload our code, we will try to post solutions here.
 * When uploading code, if you get an error saying that you must specify the upload port, a few solutions might work.
-  * First try to install the Nucleo-F429ZI drivers you can find online. 
+  * First try to install the Nucleo-F429ZI drivers you can find online.
   * If this doesn't work, open the `platformio.ini` file and you can specify the upload port here. You can add the line of code `upload_port = YOUR_PATH` where YOUR_PATH is the path you can find the microcontroller plugged in via usb. For windows users, look in the file explorer and see what letter drive this is. It could be the 'D:/' drive for example, so you would type `upload_port = D:/`. After adding this line of code it should upload correctly.
-
