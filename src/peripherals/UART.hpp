@@ -2,6 +2,6 @@
 #define PERIPHERALS_UART_H_
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX);
+static Serial pc(USBTX, USBRX);
 
 #endif

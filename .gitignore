@@ -3,4 +3,4 @@
 .clang_complete
 .gcc-flags.json
 .yml
-platformio.ini
+.ini

@@ -1,8 +1,8 @@
-
 #include "mbed.h"
 #include <math.h>
 #include "AnalogSensorRead.hpp"
 #include "analogin_api.h"
+#include "UART.hpp"
 
 #define NUM_THERMISTORS 6
 
@@ -10,8 +10,6 @@
 //IMPORTANT!: ONLY WORKS WHEN FED 3.3V, NOT 5V!
 void readAllThermistors() {
   //Starts serial communication with the PC
-  Serial pc(USBTX,USBRX,115200);
-
   int thermistorReading;
 
   PinName thermistors[NUM_THERMISTORS] = {A0, A1, A2, A3, A4, A5};
