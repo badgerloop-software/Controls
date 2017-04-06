@@ -1,10 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <stdbool.h>
 #include "RetroreflectiveTest.hpp"
-#include "mbed.h"
-#include "../peripherals/UART.hpp"
 
 InterruptIn event(D2);
 Timer timer;
