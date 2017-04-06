@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include "RetroreflectiveTest.hpp"
 #include "mbed.h"
+#include "../peripherals/UART.hpp"
 
 InterruptIn event(D2);
 Timer timer;
@@ -20,7 +21,7 @@ void retroInterrupt(){
     currentTimeStamp = timer.read_ms();
 }
 
-int retroTest() {
+void retroTest() {
     double distanceTravelled = 0;
     double speed = 0;
 
@@ -33,9 +34,12 @@ int retroTest() {
         distanceTravelled = getDistance(stripCount, DISTANCE_BETWEEN_STRIPS);
         speed = getSpeed(stripCount, previousTimeStamp, currentTimeStamp);
 
-        printf("Strip count = %d",stripCount);
-        printf("Distance Travelled = %f", distanceTravelled);
-        printf("Speed = %f", speed);
+        pc.printf("Strip count = %d",stripCount);
+        pc.printf("\n");
+        pc.printf("Distance Travelled = %f", distanceTravelled);
+        pc.printf("\n");
+        pc.printf("Speed = %f", speed);
+        pc.printf("\n");
 
         retroFlag = 0;
       }
