@@ -9,13 +9,8 @@ void sendAnalog(AnalogIn pin, Serial* uart) {
   }
 }
 
-void uartInterrupt() {
-
-}
-
 // receives analog value from UART
 void receiveAnalog(Serial* uart) {
-  uart->attach(&uartInterrupt);
   while(true) {
     led2 = !led2;
     if (uart->readable()) {
