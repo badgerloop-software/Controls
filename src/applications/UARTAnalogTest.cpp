@@ -30,9 +30,10 @@ void prompt(AnalogIn pin, Serial* uart) {
     pc.printf("Enter 't' for transmitter or 'r' for receiver\n");
     led1 = !led1;
     if (pc.readable()) {
-      if (pc.getc() == 't') sendAnalog(pin, uart);
-      else if (pc.getc() == 'r') receiveAnalog(uart);
-      else pc.printf("That isn't very valid.");
+      char charInput = pc.getc();
+      if (charInput == 't') sendAnalog(pin, uart);
+      else if (charInput == 'r') receiveAnalog(uart);
+      else pc.printf("'%c' isn't very valid", charInput);
     }
     wait(2);
   }
