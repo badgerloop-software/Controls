@@ -8,7 +8,7 @@ int stripCount = 0;
 bool retroFlag = 0;
 const int DISTANCE_BETWEEN_STRIPS = 5;
 
-void retroInterrupt(){
+void retroInterrupt() {
     stripCount++;
     retroFlag = 1;
     previousTimeStamp = currentTimeStamp;
@@ -23,9 +23,10 @@ void retroTest() {
     currentTimeStamp = timer.read_ms(); // time is read in miliseconds
 
     while(1) {
+      pc.printf("in retro test");
       event.rise(&retroInterrupt); // calls retroInterrupt when a rising edge occurs
       if (retroFlag) {
-        distanceTravelled = getDistance(stripCount, DISTANCE_BETWEEN_STRIPS);
+        distanceTravelled = getDistance();
         speed = getSpeed(stripCount, previousTimeStamp, currentTimeStamp);
 
         pc.printf("Strip count = %d",stripCount);
@@ -40,12 +41,13 @@ void retroTest() {
     }
 }
 
-double getDistance(){
+double getDistance() {
+  pc.printf("in get distance");
     return stripCount*DISTANCE_BETWEEN_STRIPS;
 }
 
 // time is measured in miliseconds
-double getSpeed(double distance, double previousTime, double currentTime){
+double getSpeed(int distance, double previousTime, double currentTime) {
     double timeElapsed = currentTime-previousTime;
     return distance/timeElapsed;
 }

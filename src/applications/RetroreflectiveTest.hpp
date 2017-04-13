@@ -11,7 +11,7 @@
 /*
  * returns the distance traveled (stripeCount*distanceBetweenStripes)
  */
-double getDistance(int stripeCount, double distanceBetweenStrips);
+double getDistance();
 
 /*
  * returns the average velocity (distance since last strip / time elapsed since last strip)
