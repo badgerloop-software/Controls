@@ -9,10 +9,12 @@ bool retroFlag = 0;
 const int DISTANCE_BETWEEN_STRIPS = 5;
 
 void retroInterrupt() {
+    pc.printf(" -In retroInterrupt\n");
     stripCount++;
     retroFlag = 1;
     previousTimeStamp = currentTimeStamp;
     currentTimeStamp = timer.read_ms();
+    pc.printf(" -RetroFlag = %d\n", retroFlag);
 }
 
 void retroTest() {
@@ -22,19 +24,19 @@ void retroTest() {
     timer.start();
     currentTimeStamp = timer.read_ms(); // time is read in miliseconds
 
+    pc.printf("In retroTest\n");
+
+    event.rise(&retroInterrupt); // calls retroInterrupt when a rising edge occurs
+
     while(1) {
-      pc.printf("in retro test");
-      event.rise(&retroInterrupt); // calls retroInterrupt when a rising edge occurs
+      wait(.5); // without this, nothing prints in the if statement
       if (retroFlag) {
         distanceTravelled = getDistance();
         speed = getSpeed(stripCount, previousTimeStamp, currentTimeStamp);
 
-        pc.printf("Strip count = %d",stripCount);
-        pc.printf("\n");
-        pc.printf("Distance Travelled = %f", distanceTravelled);
-        pc.printf("\n");
-        pc.printf("Speed = %f", speed);
-        pc.printf("\n");
+        pc.printf("Strip count = %d\n",stripCount);
+        pc.printf("Distance Travelled = %f\n", distanceTravelled);
+        pc.printf("Speed = %f\n", speed);
 
         retroFlag = 0;
       }
@@ -42,12 +44,11 @@ void retroTest() {
 }
 
 double getDistance() {
-  pc.printf("in get distance");
     return stripCount*DISTANCE_BETWEEN_STRIPS;
 }
 
 // time is measured in miliseconds
 double getSpeed(int distance, double previousTime, double currentTime) {
-    double timeElapsed = currentTime-previousTime;
-    return distance/timeElapsed;
+    double timeElapsed = currentTime - previousTime;
+    return distance / timeElapsed;
 }
