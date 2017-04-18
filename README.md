@@ -1,3 +1,4 @@
+
 # Controls
 We are the team responsible for the embedded programming side of badgerloop. We will work closely with the software and electrical teams to develop our mechatronic system. This will be your main resource to get things done.
 <hr>
@@ -9,6 +10,7 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 * [Doug Dresser](mailto:dwdresser@wisc.edu) **I2C**
 * [Sam Schreiner](mailto:sschreiner@wisc.edu)
 * [Owen Zinkgraf](mailto:ozinkgraf@wisc.edu)
+* [Ezra Boley](mailto:eboley@wisc.edu) **Analog**
 (add your name here while you're at it)
 
 ## Important Links
