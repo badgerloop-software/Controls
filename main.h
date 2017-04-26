@@ -25,7 +25,7 @@
 
 // Includes
 #include "mbed.h"
-#include "applications/blinky.h"
+#include "applications/Blinky.h"
 #include "peripherals/LED.h"
 #include "applications/UARTAnalogTest.h"
 #include "peripherals/UART.h"
