@@ -1,9 +1,0 @@
-.\build\bignum.o: mbed-os/features/mbedtls/src/bignum.c
-.\build\bignum.o: mbed_config.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/config.h
-.\build\bignum.o: mbed-os/features/mbedtls/platform/inc/platform_mbed.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/check_config.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/bignum.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/bn_mul.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/platform.h
-.\build\bignum.o: mbed-os/features/mbedtls/inc/mbedtls/platform_time.h
