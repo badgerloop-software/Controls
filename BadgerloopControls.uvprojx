@@ -380,11 +380,6 @@
           <GroupName>applications</GroupName>
           <Files>
             <File>
-              <FileName>blinky.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>applications/blinky.cpp</FilePath>
-            </File>
-            <File>
               <FileName>MPU9250AccelTest.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>applications/MPU9250AccelTest.cpp</FilePath>
@@ -400,16 +395,6 @@
               <FilePath>applications/UARTAnalogTest.cpp</FilePath>
             </File>
             <File>
-              <FileName>blinky.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\applications\blinky.h</FilePath>
-            </File>
-            <File>
-              <FileName>LinePressure.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\applications\LinePressure.h</FilePath>
-            </File>
-            <File>
               <FileName>MPU9250AccelTest.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\applications\MPU9250AccelTest.h</FilePath>
@@ -423,6 +408,16 @@
               <FileName>UARTAnalogTest.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\applications\UARTAnalogTest.h</FilePath>
+            </File>
+            <File>
+              <FileName>Blinky.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\applications\Blinky.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Blinky.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\applications\Blinky.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4483,6 +4478,16 @@
               <FileName>UART.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\peripherals\UART.h</FilePath>
+            </File>
+            <File>
+              <FileName>Thermistor.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\peripherals\Thermistor.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Thermistor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\peripherals\Thermistor.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,11 +1,12 @@
 #include "main.h"
 
 int main(void) {
+	init();
   pc.printf("Hiya\n");
   pc.printf("Type 'help' for a command list");
   pc.printf("Type 'run' to start the pod run\n");
   pc.printf("Type 'runtest x' to run the x state of the state machine.\n");
-
+	
   while (true) {
     getCommands();
   }
@@ -39,4 +40,12 @@ void getCommands(void) {
       pc.printf("'uartanalogtest' - Run the UART analog test\n");
     } else pc.printf("'%s' commmand not recognized", command.c_str());
   }   
+}
+
+/**
+* Initializes and declares all objects for pod run
+*
+*/
+void init(void) {
+	//TODO
 }

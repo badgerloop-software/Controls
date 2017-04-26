@@ -2,6 +2,7 @@
 #define PERIPHERALS_THERMISTOR_H_
 
 #include "mbed.h"
+#include <vector>
 
 class Thermistor {
 	public:
@@ -17,10 +18,13 @@ class Thermistor {
     *
     * @param analogOut - mbed pin to use for thermistor
     */		
-		float getTemperature(void);
+		float getFahrenheit(void);
+	
+		static std::vector<Thermistor*> getSensors(void);
 	
 	private:
 		AnalogIn analogIn;
+		static std::vector<Thermistor*> sensors;
 };
 
 
