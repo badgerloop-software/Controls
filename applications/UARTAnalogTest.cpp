@@ -1,4 +1,4 @@
-#include "UARTAnalogTest.hpp"
+#include "UARTAnalogTest.h"
 
 // Sends analog signal found from pin over UART.
 void sendAnalog(AnalogIn pin, Serial* uart) {

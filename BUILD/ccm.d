@@ -1,0 +1,9 @@
+.\build\ccm.o: mbed-os/features/mbedtls/src/ccm.c
+.\build\ccm.o: mbed_config.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/config.h
+.\build\ccm.o: mbed-os/features/mbedtls/platform/inc/platform_mbed.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/check_config.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/ccm.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/cipher.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/platform.h
+.\build\ccm.o: mbed-os/features/mbedtls/inc/mbedtls/platform_time.h

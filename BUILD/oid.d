@@ -1,0 +1,17 @@
+.\build\oid.o: mbed-os/features/mbedtls/src/oid.c
+.\build\oid.o: mbed_config.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/config.h
+.\build\oid.o: mbed-os/features/mbedtls/platform/inc/platform_mbed.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/check_config.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/oid.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/asn1.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/bignum.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/pk.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/md.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/rsa.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/ecp.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/ecdsa.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/cipher.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/x509.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/platform.h
+.\build\oid.o: mbed-os/features/mbedtls/inc/mbedtls/platform_time.h

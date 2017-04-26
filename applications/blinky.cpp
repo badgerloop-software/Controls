@@ -1,4 +1,4 @@
-#include "blinky.hpp"
+#include "blinky.h"
 
 void blinky(float seconds) {
   while(1) {

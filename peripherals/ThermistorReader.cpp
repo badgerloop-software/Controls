@@ -1,8 +1,8 @@
 #include "mbed.h"
 #include <math.h>
-#include "AnalogSensorRead.hpp"
+#include "AnalogSensorRead.h"
 #include "analogin_api.h"
-#include "UART.hpp"
+#include "UART.h"
 
 #define NUM_THERMISTORS 6
 

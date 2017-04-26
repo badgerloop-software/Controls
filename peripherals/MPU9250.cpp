@@ -1,4 +1,4 @@
-#include "MPU9250.hpp"
+#include "MPU9250.h"
 
 //Constructor
 MPU9250::MPU9250(PinName sda, PinName scl) : connection(sda, scl) {

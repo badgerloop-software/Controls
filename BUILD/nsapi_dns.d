@@ -1,0 +1,16 @@
+.\build\nsapi_dns.o: mbed-os/features/netsocket/nsapi_dns.cpp
+.\build\nsapi_dns.o: mbed_config.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/nsapi_dns.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/nsapi_types.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/NetworkStack.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/SocketAddress.h
+.\build\nsapi_dns.o: mbed-os/platform/mbed_toolchain.h
+.\build\nsapi_dns.o: mbed-os/platform/mbed_preprocessor.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/NetworkInterface.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/UDPSocket.h
+.\build\nsapi_dns.o: mbed-os/features/netsocket/Socket.h
+.\build\nsapi_dns.o: mbed-os/./rtos/Mutex.h
+.\build\nsapi_dns.o: mbed-os/rtos/rtx/TARGET_CORTEX_M/cmsis_os.h
+.\build\nsapi_dns.o: mbed-os/platform/Callback.h
+.\build\nsapi_dns.o: mbed-os/./platform/mbed_assert.h
+.\build\nsapi_dns.o: mbed-os/./rtos/Semaphore.h

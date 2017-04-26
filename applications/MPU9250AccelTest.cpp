@@ -1,4 +1,4 @@
-#include "MPU9250AccelTest.hpp"
+#include "MPU9250AccelTest.h"
 
 //Object of MPU9250 class
 //I2C1 is located at port PB_9 and PB_8 on the Nucleo microcontroller
