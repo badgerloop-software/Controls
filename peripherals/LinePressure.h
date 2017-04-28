@@ -4,9 +4,6 @@
 #include "mbed.h"
 #include <vector>
 
-#define BRAKE_TYPE			0
-#define PROPULSION_TYPE	1
-
 class LinePressureSensor {
 	public:
 		/**
@@ -14,7 +11,7 @@ class LinePressureSensor {
     *
     * @param analogOut - mbed pin to use for thermistor
     */
-		LinePressureSensor(PinName analogPin, int type);
+		LinePressureSensor(PinName analogPin);
 	
     /**
     * Gets pressure in Pascals
@@ -26,12 +23,8 @@ class LinePressureSensor {
     */
 		int getPSI(void);
 	
-		static std::vector<LinePressureSensor*> getSensors(void);
-	
 	private:
 		AnalogIn analogIn;
-		int type;
-		static std::vector<LinePressureSensor*> sensors;
 };
 
 #endif

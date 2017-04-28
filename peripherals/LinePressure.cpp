@@ -1,10 +1,7 @@
 #include "LinePressure.h"
 
 // Constructor
-LinePressureSensor::LinePressureSensor(PinName analogPin, int type) : analogIn(analogPin),
-																																						type(type)	{
-	sensors.push_back(this);
-}
+LinePressureSensor::LinePressureSensor(PinName analogPin) : analogIn(analogPin) {}
 	
 int LinePressureSensor::getPascals(void) {
 	//TODO
@@ -14,8 +11,4 @@ int LinePressureSensor::getPascals(void) {
 int LinePressureSensor::getPSI(void) {
 	//TODO
 	return -1;
-}
-
-std::vector<LinePressureSensor*> LinePressureSensor::getSensors(void) {
-	return sensors;
 }

@@ -20,11 +20,8 @@ class Thermistor {
     */		
 		float getFahrenheit(void);
 	
-		static std::vector<Thermistor*> getSensors(void);
-	
 	private:
 		AnalogIn analogIn;
-		static std::vector<Thermistor*> sensors;
 };
 
 

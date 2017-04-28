@@ -1,14 +1,7 @@
 #include "Thermistor.h"
 
 // Constructor
-Thermistor::Thermistor(PinName analogPin) : analogIn(analogPin) {
-	// adds all instances to object list.
-	sensors.push_back(this);
-}
-
-std::vector<Thermistor*> Thermistor::getSensors(void) {
-	return sensors;
-}
+Thermistor::Thermistor(PinName analogPin) : analogIn(analogPin) {}
 
 float Thermistor::getFahrenheit(void) {
 	//TODO
