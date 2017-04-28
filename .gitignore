@@ -5,6 +5,6 @@
 .yml
 .ini
 BUILD/
-.uvguix.*
+*.uvguix.*
 DebugConfig/
 .TMP
