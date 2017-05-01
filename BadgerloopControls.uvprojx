@@ -439,6 +439,16 @@
               <FileType>5</FileType>
               <FilePath>.\main.h</FilePath>
             </File>
+            <File>
+              <FileName>StateMachine.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\StateMachine.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>StateMachine.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\StateMachine.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

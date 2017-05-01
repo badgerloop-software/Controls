@@ -2,7 +2,6 @@
 #define PERIPHERALS_THERMISTOR_H_
 
 #include "mbed.h"
-#include <vector>
 
 class Thermistor {
 	public:
@@ -21,7 +20,7 @@ class Thermistor {
 		float getFahrenheit(void);
 	
 	private:
-		AnalogIn analogIn;
+		AnalogIn _analogIn;
 };
 
 

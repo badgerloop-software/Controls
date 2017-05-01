@@ -2,7 +2,6 @@
 #define PERIPHERALS_LINEPRESSURE_H_
 
 #include "mbed.h"
-#include <vector>
 
 class LinePressureSensor {
 	public:
@@ -24,7 +23,7 @@ class LinePressureSensor {
 		int getPSI(void);
 	
 	private:
-		AnalogIn analogIn;
+		AnalogIn _analogIn;
 };
 
 #endif

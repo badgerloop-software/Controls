@@ -1,7 +1,8 @@
 #include "LinePressure.h"
 
 // Constructor
-LinePressureSensor::LinePressureSensor(PinName analogPin) : analogIn(analogPin) {}
+LinePressureSensor::LinePressureSensor(PinName analogPin) :
+	_analogIn(analogPin) {}
 	
 int LinePressureSensor::getPascals(void) {
 	//TODO
