@@ -4,19 +4,16 @@ We are the team responsible for the embedded programming side of badgerloop. We 
 <hr>
 
 ## Boards Supported
-<hr>
 * [Nucleo 144 F429ZI](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/)
 
 ## Environmenets Supported
 * [Keil uVision 5 IDE](http://www2.keil.com/mdk5/uvision/)
 
 ## Dependencies
-<hr>
 * [MBED OS](https://www.mbed.com/en/platform/mbed-os/)
 MBED OS includes further dependencies like ST's HAL and MBED. Keil's package manager will install further packages.
 
 ## Development Instructions
-<hr>
 1. [Install Keil](https://www.keil.com/demo/eval/arm.htm). You will need to fill out a form to be able to download it, and what you are downloading is a trial version of the software.
 2. Follow the [instructions](https://kb.wisc.edu/cae/page.php?id=32730) to connect to UW-Madison's Engineering License VPN.
   + If you already have Cisco AnyConnect or another VPN app, connect to `dept-ra-cssc.vpn.wisc.edu` and use the group `ENGINEERING_LICENSING`.
@@ -27,13 +24,11 @@ MBED OS includes further dependencies like ST's HAL and MBED. Keil's package man
 7. Begin contributing!
 
 ## So you want to make a commit
-<hr>
 Does it compile?  
 * yes -> Commit away!  
 * no  -> Don't you dare  
 
 ## Important Links
-<hr>
 * [System Architecture Design](https://drive.google.com/file/d/0B3JYQFEVstJTN0VSdUcyTlg0RlE/view?usp=sharing)
 * [State Machine Diagram](https://drive.google.com/file/d/0B3JYQFEVstJTa3dqOElqY2ttcGc/view?usp=sharing)
 * [Microcontroller](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/)
