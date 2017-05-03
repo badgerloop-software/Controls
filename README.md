@@ -33,6 +33,7 @@ Does it compile?
 * [State Machine Diagram](https://drive.google.com/file/d/0B3JYQFEVstJTa3dqOElqY2ttcGc/view?usp=sharing)
 * [Microcontroller](https://developer.mbed.org/platforms/ST-Nucleo-F429ZI/)
 * [Final Design Package](https://docs.google.com/presentation/d/19tKkz2pZJ3SqOj3gx-DnCM2pNxR-0_Wi3x4bgSyD5tw/edit?usp=sharing)
+* [Pin Assignments](https://docs.google.com/spreadsheets/d/1tzqCBdWPqIOUyLG5kfgT8CnwwVi2Sx8zOyC4Jp1TQsU/edit#gid=1310216398)
 <!---
 # Code Example
 -->
