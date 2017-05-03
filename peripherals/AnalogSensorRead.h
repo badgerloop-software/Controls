@@ -12,7 +12,6 @@
 *   Return:
 *     double reading = The value of the IR sensor in a readable unit
 */
-
 double irRead(double analogIRvalue, int sensorNumber);
 
 
@@ -22,7 +21,6 @@ double irRead(double analogIRvalue, int sensorNumber);
 * @param PinName thermPin
 * @return double temperature = The temperature reading in fahrenheit from the
 *                          thermistor
-
 */
 void readAllThermistors(void);  //this one reads all the thermistors
 

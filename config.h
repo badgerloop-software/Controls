@@ -12,8 +12,13 @@
 #define MAX_RETRO_TIMEOUT_S				-1
 
 // Pins Assignments
-#define RETRO_ONE			D2
-#define RETRO_TWO			D3
-#define RETRO_THREE		D4
+// Digital Pins
+#define RETRO_ONE					D2
+#define RETRO_TWO					D3
+#define RETRO_THREE				D4
+#define PRES_PROP_ONE			-1
+#define PRES_PROP_TWO			-1
+#define PRES_BRAKE_ONE		-1
+#define PRES_BRAKE_TWO		-1
 
 #endif

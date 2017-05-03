@@ -2,7 +2,9 @@
 #define MACHINE_STATEMACHINE_H_
 #include "mbed.h"
 #include "config.h"
-#include "EventData.h"
+#include "machine\includes\EventData.h"
+#include "machine\includes\StatusData.h"
+#include "peripherals\UART.h"
 
 // Forward declaration probably should have used multiple
 // files
@@ -15,13 +17,13 @@ class StateMachine;
 // have multi-line define statements. Creates null
 // terminated array
 #define BEGIN_TRANSITION_MAP \
-		static const unsigned char TRANSITIONS[] = { \
+		static const unsigned char TRANSITIONS[] = { 
 #define TRANSITION_MAP_ENTRY(entry) \
 			entry,
 #define END_TRANSITION_MAP(data) \
 			0 \
 		}; \
-	ExternalEvent(TRANSITIONS[currentState], data);
+	externalEvent(TRANSITIONS[currentState], data);
 
 // State machine functions are of this type. Eventually
 // will use this type for an array of pointers
@@ -39,6 +41,8 @@ class StateMachine {
 		~StateMachine();
 		// External events here
 		// e.g. a low battery would need an event func
+		void callFault(StatusData*);
+		
 	
 	protected:
 		enum { EVENT_IGNORED = 0xFE, CANNOT_HAPPEN};
@@ -48,7 +52,7 @@ class StateMachine {
 		
 	private:
 		// state machine functions. May need EventData
-		void fault();
+		void fault(StatusData*);
 		void idle();
 		void ready();
 		void pushing();

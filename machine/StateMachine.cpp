@@ -46,11 +46,23 @@ void StateMachine::StateEngine() {
 		}
 	}
 }
-// external event functions
+// external event functions //TODO
+void StateMachine::callFault(StatusData* pStatusData) {
+	pc.printf(pStatusData->statusMessage.c_str());
+	BEGIN_TRANSITION_MAP											// state table
+		TRANSITION_MAP_ENTRY (EVENT_IGNORED)		// Fault
+		TRANSITION_MAP_ENTRY (FAULT)						// Idle
+		TRANSITION_MAP_ENTRY (FAULT)						// Ready
+		TRANSITION_MAP_ENTRY (FAULT)						// Pushing
+		TRANSITION_MAP_ENTRY (FAULT)						// Coast
+		TRANSITION_MAP_ENTRY (FAULT)						// Brake
+	END_TRANSITION_MAP(pStatusData)
+}
+
 
 // state functions //TODO
 // What happens to 
-void StateMachine::fault() {
+void StateMachine::fault(StatusData* pStatusData) {
 
 }
 

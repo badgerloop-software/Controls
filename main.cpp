@@ -1,5 +1,7 @@
 #include "main.h"
 
+
+
 int main(void) {
 	init();
   pc.printf("Hiya\n");
@@ -43,9 +45,15 @@ void getCommands(void) {
 }
 
 /**
-* Initializes and declares all objects for pod run
+* Initializes and declares all events for pod run
 *
 */
 void init(void) {
-	//TODO
+	
+}
+
+void run(void) {
+	init();
+	// do some more stuff
+	
 }

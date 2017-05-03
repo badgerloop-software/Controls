@@ -2,6 +2,19 @@
 #define MAIN_H_
 
 //********!***********************
+//********* Includes *************
+//*************-******_***********
+#include "mbed.h"
+#include "applications/Blinky.h"
+#include "peripherals/LED.h"
+#include "applications/UARTAnalogTest.h"
+#include "peripherals/UART.h"
+#include "applications/RetroreflectiveTest.h"
+#include <string>
+#include "config.h"
+
+
+//********!***********************
 //********* Macros ***************
 //*************-******_***********
 // State Machine
@@ -23,18 +36,19 @@
 
 
 
-//********!***********************
-//********* Includes *************
-//*************-******_***********
-#include "mbed.h"
-#include "applications/Blinky.h"
-#include "peripherals/LED.h"
-#include "applications/UARTAnalogTest.h"
-#include "peripherals/UART.h"
-#include "applications/RetroreflectiveTest.h"
-#include <string>
 
-// Functions
+//********!***********************
+//********* Functions ************
+//*************-******_***********
 void getCommands(void);
 void init(void);
+
+
+//********!***********************
+//******* Pin Assignments ********
+//*************-******_***********
+DigitalIn retro1(RETRO_ONE);
+DigitalIn retro2(RETRO_TWO);
+DigitalIn retro3(RETRO_THREE);
+
 #endif

@@ -444,6 +444,11 @@
               <FileType>5</FileType>
               <FilePath>.\config.h</FilePath>
             </File>
+            <File>
+              <FileName>globals.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\globals.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -4494,6 +4499,16 @@
               <FileType>5</FileType>
               <FilePath>.\peripherals\Thermistor.h</FilePath>
             </File>
+            <File>
+              <FileName>RetroreflectiveSensor.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\peripherals\RetroreflectiveSensor.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>RetroreflectiveSensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\peripherals\RetroreflectiveSensor.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -4513,6 +4528,11 @@
               <FileName>EventData.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\machine\includes\EventData.h</FilePath>
+            </File>
+            <File>
+              <FileName>StatusData.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\machine\includes\StatusData.h</FilePath>
             </File>
           </Files>
         </Group>
