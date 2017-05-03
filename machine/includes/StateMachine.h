@@ -1,20 +1,12 @@
-#ifndef STATEMACHINE_H_
-#define STATEMACHINE_H_
+#ifndef MACHINE_STATEMACHINE_H_
+#define MACHINE_STATEMACHINE_H_
 #include "mbed.h"
+#include "config.h"
+#include "EventData.h"
 
 // Forward declaration probably should have used multiple
 // files
 class StateMachine;
-
-// Allows us to share data across the state machine.
-// Doing it like this is required with some sort of
-// RTOS. Virtual functions usually are implemented
-// by the classes that inherit it.
-class EventData {
-	public:
-		virtual ~EventData() {};
-};
-
 
 // Found this treat using preprocessor directives.
 // Allows to create the GetStateMap() function

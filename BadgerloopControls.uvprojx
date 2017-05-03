@@ -440,14 +440,9 @@
               <FilePath>.\main.h</FilePath>
             </File>
             <File>
-              <FileName>StateMachine.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\StateMachine.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>StateMachine.h</FileName>
+              <FileName>config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\StateMachine.h</FilePath>
+              <FilePath>.\config.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4498,6 +4493,26 @@
               <FileName>Thermistor.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\peripherals\Thermistor.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>machine</GroupName>
+          <Files>
+            <File>
+              <FileName>StateMachine.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\machine\StateMachine.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>StateMachine.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\machine\includes\StateMachine.h</FilePath>
+            </File>
+            <File>
+              <FileName>EventData.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\machine\includes\EventData.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -1,4 +1,4 @@
-#include "StateMachine.h"
+#include "includes\StateMachine.h"
 
 StateMachine::StateMachine() :
 	currentState(IDLE),
@@ -49,9 +49,41 @@ void StateMachine::StateEngine() {
 // external event functions
 
 // state functions //TODO
-void StateMachine::fault() {}
-void StateMachine::idle() {}
-void StateMachine::ready() {}
-void StateMachine::pushing() {}
-void StateMachine::coast() {}
-void StateMachine::braking() {}
+// What happens to 
+void StateMachine::fault() {
+
+}
+
+// Initial state. Setup connection to network and send
+// heartbeats. Close braking valves and solenoids. Verify
+// line pressure, verify propulsion pressure, verify doors
+// are closed. Verify battery voltage and current.
+// wait for dashboard being ready. We do not fault in
+// this state.
+void StateMachine::idle() {
+
+}
+
+// Entered from idle. Wait for limit switch to be pressed
+// by pusher and acceleration to be positive
+void StateMachine::ready() {
+
+}
+
+// Retro timer starts. Fault if we don't see a retro
+// right away. Navigation starts. Enter coast after
+// limit switch opens.
+void StateMachine::pushing() {
+
+}
+
+// Open the propulsion valves. Fault if no retro. 
+// brake under a certain time or signal.
+void StateMachine::coast() {
+}
+
+// Close propulsion valves. Open braking valves.
+// wait for velocity == 0 for 5 seconds then depress.
+void StateMachine::braking() {
+
+}
