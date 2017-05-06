@@ -1,8 +1,0 @@
-{
-"config": {
-	"retro_one_pin": {
-		"help": "The digital in pin for the front retro sensor",
-		"value": D2
-		}
-	}
-}

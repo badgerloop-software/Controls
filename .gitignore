@@ -1,10 +1,6 @@
-.pioenvs
-.piolibdeps
-.clang_complete
-.gcc-flags.json
-.yml
-.ini
-BUILD/
-*.uvguix.*
-DebugConfig/
-.TMP
+DebugConfig
+BUILD
+Listings
+*.ini
+**uvguix**
+
