@@ -2,7 +2,7 @@
 #include <math.h>
 #include "../../include/periph/analogSensorRead.h"
 #include "analogin_api.h"
-#include "../../include/common/UART.h"
+#include "../../include/configs/config.h"
 
 #define NUM_THERMISTORS 6
 

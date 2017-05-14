@@ -13,7 +13,6 @@
 
 #include "../periph/LED.h"
 
-#include "../common/UART.h"
 //********************************
 
 //********* Macros ***************

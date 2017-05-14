@@ -6,7 +6,7 @@
 #include <time.h>
 #include <stdbool.h>
 #include "mbed.h"
-#include "../common/UART.h"
+#include "../configs/config.h"
 
 /*
  * returns the distance traveled (stripeCount*distanceBetweenStripes)

@@ -4,7 +4,6 @@
 #include "../configs/config.h"
 #include "../common/eventData.h"
 #include "../common/statusData.h"
-#include "../common/UART.h"
 
 // Forward declaration probably should have used multiple
 // files

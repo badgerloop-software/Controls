@@ -1,6 +1,8 @@
 #ifndef CONFIG_H_
 #define CONFIG_H_
 
+static Serial pc(USBTX, USBRX);
+
 // Maximums and Minimums //TODO
 #define MIN_BREAK_PRESSURE_PSI		-1
 #define MAX_BREAK_PRESSURE_PSI		-1

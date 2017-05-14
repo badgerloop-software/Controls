@@ -2,7 +2,7 @@
 #define APPLICATIONS_UART_H_
 #include "mbed.h"
 #include "../periph/LED.h"
-#include "../common/UART.h"
+#include "../configs/config.h"
 
 void prompt(AnalogIn pin, Serial uart);
 
